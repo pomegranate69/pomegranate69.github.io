@@ -1,0 +1,69 @@
+<html>
+    <head>
+        <title>mspaint</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+		<link rel="stylesheet" href="./style.css">
+    </head>
+    <body>
+        <h1>connect to community server</h1>
+        <!-- Button trigger modal -->
+        <!--button type="button" class="btn btn-primary" href="google.com">Connect</button-->
+		<button id="faggot" data-bs-toggle="modal" data-bs-target="#exampleModal" type="button" class="btn btn-primary btn-lg" data-bs-target="#exampleModal">Connect</button>
+        <br>
+		<a href="#" class="link-primary" data-bs-toggle="modal" data-bs-target="#exampleModal2">Having Trouble?</a>
+        <!--type="button" class="btn btn-primary"-->
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Copy and paste commands into console</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body" id="fucker1">
+                        Click on commands to copy
+                        <br>
+                        <kbd id="p1" tabindex="0" data-bs-toggle="tooltip" title="Click to Copy" onclick="copyToClipboard('#p1')">sv_allowupload 1;connect mspaint.ml; password butthole</kbd>
+                        <button type="button" class="btn btn-light coper hide" onclick="copyToClipboard('#p1')">Copy</button>
+                        <!--<p style="display:inline" class="gay">Copied!</p>-->
+                    </div>
+                    <div class="modal-footer">
+                        <p style="display:inline" class="fw-bold text-start gay">Copied!</p>
+                        <a href="steam://run/730"type="button" class="btn btn-info">Launch Game</a>
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Ok</button>
+                        <!--<button type="button" class="btn btn-primary">Save changes</button>-->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Moda2l -->
+        <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel2">Extra Instructions</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body" id="fucker2">
+                        Click on commands to copy
+                        <br>
+                        <kbd id="p2" tabindex="0" data-bs-toggle="tooltip" title="Click to Copy" onclick="copyToClipboard2('#p2')">sv_allowupload 1;connect mspaint.ml; password butthole</kbd>
+                        <hr>
+                        <p>Paste copied commands into console and click "Submit"</p>
+                        <img src="data:image/jpeg;base64,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">
+                        <!--<p style="display:inline" class="gay">Copied!</p>-->
+                    </div>
+                    <div class="modal-footer">
+                        <p style="display:inline" class="fw-bold text-start gay">Copied!</p>
+                        <a href="steam://run/730"type="button" class="btn btn-info">Launch Game</a>
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Ok</button>
+                        <!--<button type="button" class="btn btn-primary">Save changes</button>-->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+	<script src="./script.js"></script>
+</html>
